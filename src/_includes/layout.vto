@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="flex-1 flex-col border-2">
+    <nav class="border-2 p-4 px-7 flex justify-between flex-row md:space-x-4">
+
+        <div class="flex flex-col md:flex-row md:space-x-4 space-y-2"> 
+            <a class="hover:underline font-bold text-4xl" href="/">Steven Tam</a>
+            <div class="flex space-x-4 items-center m-0 md:mt-3">
+                <a class="hover:underline text-xl" href="/work">Work</a>
+                <a class="hover:underline text-xl" href="/projects">Projects</a>
+                <a class="hover:underline text-xl" href="/contact">Contact</a>
+            </div>
+        </div>
+        
+        
+        <div class="hidden md:flex flex flex-row space-x-3 mt-3"> 
+            <a class="flex hover:underline text-lg items-center space-x-1" href="">
+                <img src="/img/github.svg" alt="github icon" class="h-5 aspect-square" />
+                <p>/steven-tam</p>
+            </a>
+            <a class="flex hover:underline text-lg items-center space-x-1" href="">
+                <img src="/img/linkedin.svg" alt="linkedin icon" class="h-5 aspect-square" />
+                <p>/ln/steven-tam</p>
+            </a>
+        </div>
+        
+    </nav>
+
+    <main class="min-h-screen">
+        {{ content }}
+    </main>
+
+    <footer class="flex flex-col border-2 p-5 items-center text-center">
+        <div class="flex flex-row space-x-3"> 
+            <a class="flex hover:underline text-lg items-center space-x-1" href="">
+                <img src="/img/github.svg" alt="github icon" class="h-5 aspect-square" />
+                 <p>/steven-tam</p>
+            </a>
+            <a class="flex hover:underline text-lg items-center space-x-1" href="">
+                <img src="/img/linkedin.svg" alt="linkedin icon" class="h-5 aspect-square" />
+                 <p>/ln/steven-tam</p>
+            </a>
+        </div>
+        <p class="text-gray-400">This portfolio was made with Lume-Deno, TailwindCSS, and HTML</p>
+    <footer>
+  </body>
+</html>

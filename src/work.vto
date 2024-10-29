@@ -1,0 +1,15 @@
+---
+title: Work | Steven Tam
+---
+
+<div class="flex flex-col items-center py-4">
+{{ for history of histories }} 
+      {{ comp.history({ history }) }}
+    {{ /for }}
+
+<h1>Volunteering</h1>
+
+{{ for history of volunteering }}
+      {{ comp.history({ history }) }}
+    {{ /for }}
+</div>
