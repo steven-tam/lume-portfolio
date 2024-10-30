@@ -5,27 +5,26 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/styles.css">
   </head>
-  <body class="flex-1 flex-col border-2">
-    <nav class="border-2 p-4 px-7 flex justify-between flex-row md:space-x-4">
+  <body class="flex-1 flex-col bg-[#FAF9F6]">
+    <nav class="p-4 px-7 flex justify-between flex-row md:space-x-4">
 
         <div class="flex flex-col md:flex-row md:space-x-4 space-y-2"> 
             <a class="hover:underline font-bold text-4xl" href="/">Steven Tam</a>
             <div class="flex space-x-4 items-center m-0 md:mt-3">
                 <a class="hover:underline text-xl" href="/work">Work</a>
                 <a class="hover:underline text-xl" href="/projects">Projects</a>
-                <a class="hover:underline text-xl" href="/contact">Contact</a>
             </div>
         </div>
         
         
         <div class="hidden md:flex flex flex-row space-x-3 mt-3"> 
-            <a class="flex hover:underline text-lg items-center space-x-1" href="">
+            <a href="https://github.com/steven-tam" target="_blank" class="flex hover:underline text-lg items-center space-x-1">
                 <img src="/img/github.svg" alt="github icon" class="h-5 aspect-square" />
                 <p>/steven-tam</p>
             </a>
-            <a class="flex hover:underline text-lg items-center space-x-1" href="">
+            <a href="https://www.linkedin.com/in/steven-tam-career/" target="_blank" class="flex hover:underline text-lg items-center space-x-1">
                 <img src="/img/linkedin.svg" alt="linkedin icon" class="h-5 aspect-square" />
-                <p>/ln/steven-tam</p>
+                <p>/in/steven-tam-career</p>
             </a>
         </div>
         
@@ -35,18 +34,23 @@
         {{ content }}
     </main>
 
-    <footer class="flex flex-col border-2 p-5 items-center text-center">
-        <div class="flex flex-row space-x-3"> 
-            <a class="flex hover:underline text-lg items-center space-x-1" href="">
+    <footer class="flex flex-col border-t-2 p-5 items-center text-center">
+        best way to contact me is by email :)
+        <div class="flex flex-col md:flex-row space-x-3"> 
+            <a class="flex hover:underline text-lg items-center space-x-1" href="mailto:steven.tam123@gmail.com">
+                <img src="/img/paper-plane.svg" alt="send email" class="h-5 aspect-square" />
+                <p>steven.tam123@gmail.com</p>
+            </a>
+            <a href="https://github.com/steven-tam" target="_blank" class="flex hover:underline text-lg items-center space-x-1">
                 <img src="/img/github.svg" alt="github icon" class="h-5 aspect-square" />
                  <p>/steven-tam</p>
             </a>
-            <a class="flex hover:underline text-lg items-center space-x-1" href="">
+            <a href="https://www.linkedin.com/in/steven-tam-career/" target="_blank" class="flex hover:underline text-lg items-center space-x-1">
                 <img src="/img/linkedin.svg" alt="linkedin icon" class="h-5 aspect-square" />
-                 <p>/ln/steven-tam</p>
+                 <p>/in/steven-tam-career</p>
             </a>
         </div>
-        <p class="text-gray-400">This portfolio was made with Lume-Deno, TailwindCSS, and HTML</p>
+        <p class="text-gray-400">This portfolio was made with Lume-Deno and TailwindCSS</p>
     <footer>
   </body>
 </html>
