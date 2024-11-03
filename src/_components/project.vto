@@ -1,8 +1,5 @@
 <div class="m-8 my-16">
     <div class="flex flex-col items-center p-2 gap-2"> 
-        <a href={{ project.githubUrl }}> 
-            <img class="h-40 rounded-md transition-transform transform hover:scale-105" src={{ project.imageUrl }} alt='Project'>
-        </a>
 
         <div class="flex justify-center flex-col items-center">
             <div class="flex flex-col w-full items-center">
@@ -13,16 +10,20 @@
                 </h1>
                 <p class="text-lg font-semibold hidden md:flex">{{ project.start }} - {{ project.end }}</p>
             </div>
-            <p class="font-semibold flex md:hidden">{{ project.start }} - {{ project.end }}</p>
         </div>
     </div>
 
-    <div class="space-y-2 text-center">
-        <div class="rounded-md mt-2 p-4">
+    <div class="flex flex-col space-y-6 text-center mt-2 items-center">
+        <p class="font-semibold flex md:hidden">{{ project.start }} - {{ project.end }}</p>
+        <div class="rounded-md mt-2">
             <p>{{ project.description }}</p>
         </div>
+        <a href={{ project.githubUrl }}> 
+            <img class="rounded-md transition-transform transform hover:scale-105" src={{ project.imageUrl }} alt='Project'>
+        </a>
         <div>
             <p><span class="font-bold">Skills:</span> {{ project.technology }}</p> 
         </div>
     </div>
+
 </div>
